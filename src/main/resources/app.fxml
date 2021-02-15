@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox fx:controller="pl.tgargula.AppController" fx:id="root"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      styleClass="root">
+    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+        <Text id="title" styleClass="common-text" text="PDFEncrypter"/>
+        <Text styleClass="common-text" text="v1.1.0"/>
+    </VBox>
+    <Separator/>
+    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+        <Text styleClass="common-text" text="Krok 1. Wybierz plik pdf do zaszyfrowania"/>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <TextField fx:id="inputFilePath" disable="true"/>
+            <Button text="Wybierz plik..." onAction="#chooseFile"/>
+        </HBox>
+    </VBox>
+    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+        <Text styleClass="common-text" text="Krok 2. Ustaw hasło"/>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <Text styleClass="common-text" text="Hasło:"/>
+            <TextField fx:id="password"/>
+        </HBox>
+    </VBox>
+    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+        <Text styleClass="common-text" text="Krok 3. Wybierz nazwę pliku"/>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <Text styleClass="common-text" text="Nazwa pliku:"/>
+            <TextField fx:id="outputFileName"/>
+        </HBox>
+    </VBox>
+    <VBox>
+        <Text/>
+    </VBox>
+    <Separator/>
+    <HBox styleClass="button-box">
+        <Button text="Zamknij" onAction="#closeWindow"/>
+        <Button text="Resetuj" onAction="#reset"/>
+        <Button text="Szyfruj" onAction="#encrypt"/>
+    </HBox>
+</VBox>
