@@ -1,6 +1,9 @@
-.root {
+#root {
     -fx-background-color: rgb(43, 43, 44);
-    -fx-spacing: 20px;
+    -fx-spacing: 50px;
+    -fx-padding: 20px 0px;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 400px;
 }
 
 .common-text {
@@ -8,12 +11,12 @@
     -fx-font: 20px Ubuntu, sans-serif;
 }
 
-.fs-15 {
-    -fx-font-size: 15px;
-}
-
 #title {
     -fx-font-size: 30px;
+}
+
+#version {
+    -fx-font-size: 15px;
 }
 
 .box {
@@ -21,19 +24,41 @@
     -fx-padding: 0px 20px;
 }
 
-.separator {
-    -fx-padding: 0px 20px;
-}
-
 .box .button {
     -fx-pref-width: 125px;
+}
+
+.horizontal-box {
+    -fx-padding: 0px 20px;
+    -fx-spacing: 10px;
 }
 
 .button-box {
     -fx-alignment: CENTER_RIGHT;
     -fx-spacing: 10px;
+    -fx-padding: 0px 20px;
 }
 
 .button-box .button {
     -fx-pref-width: 75px;
+}
+
+.separator {
+    -fx-padding: 0px 20px;
+}
+
+.text-field {
+    -fx-pref-width: 300px;
+}
+
+.success {
+    -fx-fill: rgb(64, 128, 64);
+}
+
+.warning {
+    -fx-fill: rgb(128, 128, 64);
+}
+
+.failure {
+    -fx-fill: rgb(128, 64, 64);
 }

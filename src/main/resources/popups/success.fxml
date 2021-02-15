@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pl.tgargula.controllers.PopupController"
+      id="root">
+    <Text id="feedback" text="Pomyślnie zaszyfrowano plik!"/>
+    <HBox id="button-box">
+        <Button onAction="#closeApp" text="Zamknij"/>
+        <Button onAction="#closePopup" text="Szyfruj kolejny plik"/>
+        <Button onAction="#openDirectory" text="Otwórz folder"/>
+    </HBox>
+
+</VBox>

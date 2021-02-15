@@ -3,37 +3,33 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<VBox fx:controller="pl.tgargula.AppController" fx:id="root"
-      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      styleClass="root">
-    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.tgargula.controllers.AppController"
+      id="root" xmlns="http://javafx.com/javafx/11.0.1">
+    <VBox styleClass="box">
         <Text id="title" styleClass="common-text" text="PDFEncrypter"/>
-        <Text styleClass="common-text" text="v1.1.0"/>
+        <Text id="version" styleClass="common-text" text="v1.1.0"/>
     </VBox>
     <Separator/>
-    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+    <VBox styleClass="box">
         <Text styleClass="common-text" text="Krok 1. Wybierz plik pdf do zaszyfrowania"/>
-        <HBox prefHeight="100.0" prefWidth="200.0">
+        <HBox styleClass="horizontal-box">
             <TextField fx:id="inputFilePath" disable="true"/>
             <Button text="Wybierz plik..." onAction="#chooseFile"/>
         </HBox>
     </VBox>
-    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+    <VBox styleClass="box">
         <Text styleClass="common-text" text="Krok 2. Ustaw hasło"/>
-        <HBox prefHeight="100.0" prefWidth="200.0">
+        <HBox styleClass="horizontal-box">
             <Text styleClass="common-text" text="Hasło:"/>
             <TextField fx:id="password"/>
         </HBox>
     </VBox>
-    <VBox styleClass="box" prefHeight="200.0" prefWidth="100.0">
+    <VBox styleClass="box">
         <Text styleClass="common-text" text="Krok 3. Wybierz nazwę pliku"/>
-        <HBox prefHeight="100.0" prefWidth="200.0">
+        <HBox styleClass="horizontal-box">
             <Text styleClass="common-text" text="Nazwa pliku:"/>
             <TextField fx:id="outputFileName"/>
         </HBox>
-    </VBox>
-    <VBox>
-        <Text/>
     </VBox>
     <Separator/>
     <HBox styleClass="button-box">

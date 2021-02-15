@@ -1,0 +1,16 @@
+#root {
+    -fx-background-color: rgb(32, 84, 32);
+    -fx-spacing: 50px;
+    -fx-padding: 50px;
+    -fx-alignment: center;
+}
+
+#feedback {
+    -fx-fill: rgb(200, 200, 200);
+    -fx-font: 20px Ubuntu, sans-serif;
+}
+
+#button-box {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}

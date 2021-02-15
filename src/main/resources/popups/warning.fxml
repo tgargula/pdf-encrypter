@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pl.tgargula.controllers.PopupController"
+      id="root">
+    <Text fx:id="feedback" id="feedback" />
+    <HBox id="button-box">
+        <Button onAction="#closeApp" text="Zamknij aplikację"/>
+        <Button onAction="#closePopup" text="Spróbuj jeszcze raz"/>
+    </HBox>
+
+</VBox>
