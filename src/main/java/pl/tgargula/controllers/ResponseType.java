@@ -3,7 +3,7 @@ package pl.tgargula.controllers;
 import javafx.scene.text.Text;
 
 public enum ResponseType {
-    SUCCESS, FAILURE, EMPTY_PASSWORD_WARNING, FILE_NOT_SELECTED_WARNING, EMPTY_OUTPUT_WARNING;
+    SUCCESS, FAILURE, EMPTY_PASSWORD_WARNING, FILE_NOT_SELECTED_WARNING, EMPTY_OUTPUT_WARNING, INCORRECT_PASSWORD_WARNING;
 
     public String getStyleClass() {
         return getPath() + ".css";
@@ -23,6 +23,9 @@ public enum ResponseType {
                 break;
             case EMPTY_OUTPUT_WARNING:
                 feedback.setText("Nie została nadana nazwa pliku wyjściowego!");
+                break;
+            case INCORRECT_PASSWORD_WARNING:
+                feedback.setText("Hasło może zawierać małe i duże litery oraz liczby (bez polskich znaków)!");
                 break;
         }
     }
