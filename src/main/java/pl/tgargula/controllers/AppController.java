@@ -99,7 +99,7 @@ public class AppController {
             return false;
         }
 
-        if (!(password.getText().matches("^[A-Za-z0-9]$"))) {
+        if (!(password.getText().matches("[A-Za-z0-9]+"))) {
             openPopup(ResponseType.INCORRECT_PASSWORD_WARNING);
             return false;
         }
