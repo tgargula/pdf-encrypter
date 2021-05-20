@@ -37,6 +37,7 @@ There are also two warning popups.
 1. If the typed password is an empty string:
 
 ![empty password](./screenshots/screenshot5.png)
+
 2. If the typed password includes forbidden symbols.
 
 ![forbidden password](./screenshots/screenshot6.png)
